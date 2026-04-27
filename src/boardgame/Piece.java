@@ -20,8 +20,8 @@ public abstract class Piece {
     // se existe ou não possibilidade de movimento para a peça
     public boolean existPossibleMove() {
         boolean[][] matriz = possibleMoves();
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz.length; j++) {
+        for (int i = 0; i < matriz[i].length; i++) {
+            for (int j = 0; j < matriz[j].length; j++) {
                 if (matriz[i][j]) {
                     return true;
                 }

@@ -12,6 +12,21 @@ public class Board {
         pieces = new Piece[rows][columns];
     }
 
+    // Matriz de peças - retorna uma peça.
+    public Piece piece(int row, int column) {
+        // Fazer condicional caso a peça não exista.
+        // Criar excessão
+        return pieces[row][column];
+    }
+
+    // Sobrecarga
+    // Retorna a posição
+    public Piece piece(BoardPosition position) {
+        // Fazer condicional caso a peça não exista na posição.
+        // Criar excessão
+        return pieces[position.getRow()][position.getColumn()];
+    }
+
     public int getRows() {
         return rows;
     }
